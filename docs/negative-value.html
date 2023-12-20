@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation | TenoxUI</title>
+    <meta name="description" content="hello" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="../src/styles/root.css" as="style" />
+    <link rel="preload" href="../src/styles/styles.css" as="style" />
+    <link rel="preload" href="../src/styles/prism.css" as="style" />
+    <link rel="preload" href="../src/icons/style.css" as="style" />
+    <link rel="preload" href="../global.css" as="style" />
+    <link rel="stylesheet" href="../src/styles/prism.css" />
+    <link rel="stylesheet" href="../src/icons/style.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="../src/styles/styles.css" />
+    <link rel="stylesheet" href="../src/styles/root.css" />
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tenoxui@0.4.0/dist/css/index.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .darkmode {
+        --mode-icon: "nights_stay";
+        --primary: #d2e603;
+          --prim-opa: rgba(211, 230, 3, 0.2);
+        --light: #151618;
+        --sub-light: #1e1e1f;
+        --sub-text-light: #383a3b;
+        --dark: #f1efef;
+        --sub-dark: #c5c1c1;
+        --sub-text-dark: #b6b0b0;
+        --light-darker-opa: rgba(59, 60, 61, 0.5);
+        --dark-lighter-opa: rgba(213, 214, 214, 0.5);
+        --dark-opa: rgba(241, 239, 239, 0.3);
+        --light-opa: rgba(39, 40, 41, 0.3);
+        color: var(--light);
+      }
+    </style>
+    <script async type="module" src="../src/script/styles.js"></script>
+    <script async type="module" src="../src/script/docsStyles.js"></script>
+    <script defer src="../src/script/script.js"></script>
+  </head>
+  <body>
+    <!-- <header class="navbar z-99">
+      <div class="brand">TenoxUI</div>
+      <div class="menu-icon" id="menu-icon">&#9776;</div>
+    </header> -->
+
+    <header class="navbar">
+      <a class="logo" href="#">
+        <div class="fx-ctr relative w-1rem h-1rem">
+          <i class="txi ti-vtx-solid fs-1.2em absolute tc-[dark]"></i>
+          <i class="txi ti-vtx_part_2 fs-1.2em absolute tc-[primary]"></i>
+        </div>
+        <!-- <h1>Tenox<span>UI</span></h1> -->
+        <h1 class="fs-14px">Tenox<span>UI</span></h1>
+      </a>
+      <nav class="fx-ctr gap-1rem" id="navbar">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/docs">Docs</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="fx-ctr gap-1rem">
+        <div id="theme">
+          <span class="ms-line fs-1em"></span>
+        </div>
+        <div class="ms-line fs-1.8rem" id="menu-icon">menu</div>
+      </div>
+    </header>
+    <aside class="sidebar sidebar-visible" id="sidebar">
+      <div class="w-mx fx-ctr fd-[col]">
+        <div id="search-container">
+          <input type="text" id="search-input" placeholder="Search Docs..." />
+          <ul id="results-container"></ul>
+        </div>
+        <div id="sidebar-links" class="all-docs w-full">
+          <!-- Add more links as needed -->
+        </div>
+      </div>
+      <div class="post-relative w-full p-1rem b-0 fx-ctr">
+        <p class="text-para fs-12px">&copy; 2023 NOuSantx.</p>
+      </div>
+    </aside>
+    <main>
+      <section
+        class="sec-full fx-par-[flex-start] fd-[col] post-relative pt-5rem"
+      >
+        <span class="ms-line tc-[primary] fs-3rem">view_comfy</span>
+        <h1 class="pt-1rem fs-2rem">
+          How can i use negative value like
+          <span class="cl__code">-1rem</span> or
+          <span class="cl__code">-100%</span>?
+        </h1>
+        <p class="text-note">
+          It's really simple question. You can add negative value like
+          <span class="cl__code">-1px</span> or
+          <span class="cl__code">-100%</span> by just type it directly after
+          type. Here's a few example of the usage :
+        </p>
+        <div class="w-full pt-1rem">
+          <div class="fx-par-[flex-start] gap-5px fd-[col]">
+            <p class="text-note">
+              <span class="cl__code-prim">t--10px</span> : It will set
+              <span class="cl__code">top: -10px</span>
+            </p>
+            <p class="text-note">
+              <span class="cl__code-prim">rt--45deg</span> : It will set
+              <span class="cl__code">rotate: -45deg</span>
+            </p>
+          </div>
+        </div>
+        <p class="text-note pt-1rem">
+          And so on. Its really simple, right? And negative value is not
+          ocasionally used, just for a few case.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="fx-wrapper-nofull fd-row gap-2rem">
+        <div class="fx-100px fx-str gap-1rem fd-[col] jc-[sb]">
+          <div class="fx-str fd-[col]">
+            <h1 class="logo-name fs-2rem">
+              Tenox<span class="tc-[primary]">UI</span
+              ><span class="fs-1rem" hidden>.css</span>
+            </h1>
+            <p class="fs-12px tc-[sub-text-dark] fw-600">by NOuSantx</p>
+          </div>
+          <div class="social">
+            <a href="https://instagram.com/nousantx" hidden>
+              <i class="txi ti-instagram"></i>
+            </a>
+            <a href="https://linkedin.com/in/nousantx" aria-label="linkedin">
+              <i class="txi ti-linkedin"></i>
+            </a>
+            <a href="https://x.com/nousantx" aria-label="twitter">
+              <i class="txi ti-twitter_x"></i>
+            </a>
+            <a href="https://github.com/nousantx" aria-label="github">
+              <i class="txi ti-github_square"></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="fx-500px display-flex flex-parent-[flex-start] gap-2rem h-auto ai-[full] h-mn-100px fx-wrap-wrap"
+        >
+          <div class="fx-130px fx-parent-[flex-start] fd-[col] gap-10px">
+            <h2 class="fs-1.4rem">Other Project</h2>
+            <a href="#" class="footer-links">UI Component</a>
+            <a href="#" class="footer-links">TUI Design</a>
+            <a href="#" class="footer-links">TUI Core</a>
+          </div>
+          <div class="fx-130px fx-parent-[flex-start] fd-[col] gap-10px">
+            <h2 class="fs-1.4rem">Useful Links</h2>
+            <a href="#" class="footer-links">GitHub</a>
+            <a href="#" class="footer-links">NPM</a>
+            <a href="#" class="footer-links">JSDelivr</a>
+          </div>
+        </div>
+      </div>
+      <div class="fx-ctr pt-2rem">
+        <p class="fs-12px tc-[sub-text-dark] fw-600">
+          Copyright &copy; 2023 NOuSantx. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/tenoxui@0.4.0/dist/js/tenoxui.min.js"
+    ></script>
+    <script defer src="search.js"></script>
+    <script>
+      // loader overlay
+      window.addEventListener("load", () => {
+        const e = document.querySelector(".loader");
+        e.classList.add("loader-hidden");
+        e.addEventListener("transitioned", () => {
+          document.body.removeChild("loader");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "margin",
+    "link": "margin",
+    "searchable": "This page covers the topic of margins in your framework.",
+    "category": "Box"
+  },
+  {
+    "id": "padding",
+    "link": "padding",
+    "searchable": "Learn about the usage of padding in your framework on this page.",
+    "category": "Box"
+  },
+  {
+    "id": "spacing",
+    "link": "spacing",
+    "searchable": "Explore the spacing options in your framework with this documentation.",
+    "category": "Text"
+  }
+]

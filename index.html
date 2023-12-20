@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | TenoxUI</title>
+    <meta name="description" content="TenoxUI Landing Page" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="./src/styles/styles.css" as="style" />
+    <link rel="preload" href="./src/styles/prism.css" as="style" />
+    <link rel="preload" href="./src/icons/style.css" as="style" />
+    <link rel="preload" href="global.css" as="style" />
+    <link rel="stylesheet" href="./src/styles/prism.css" />
+    <link rel="stylesheet" href="./src/icons/style.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <link rel="stylesheet" href="./src/styles/root.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tenoxui@0.4.0/dist/css/index.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --box-size: 100px;
+      }
+      .darkmode {
+        --mode-icon: "nights_stay";
+        --primary: #d2e603;
+        --prim-opa: rgba(211, 230, 3, 0.2);
+        --light: #151618;
+        --sub-light: #1e1e1f;
+        --sub-text-light: #383a3b;
+        --dark: #f1efef;
+        --sub-dark: #c5c1c1;
+        --sub-text-dark: #b6b0b0;
+        --light-darker-opa: rgba(59, 60, 61, 0.5);
+        --dark-lighter-opa: rgba(213, 214, 214, 0.5);
+        --dark-opa: rgba(241, 239, 239, 0.3);
+        --light-opa: rgba(39, 40, 41, 0.3);
+        color: var(--light);
+      }
+    </style>
+    <script async type="module" src="./src/script/styles.js"></script>
+  </head>
+  <body>
+    <div class="loader"></div>
+    <header>
+      <a class="logo" href="#">
+        <div class="fx-ctr relative w-1rem h-1rem">
+          <i class="txi ti-vtx-solid fs-1.2em absolute tc-[dark]"></i>
+          <i class="txi ti-vtx_part_2 fs-1.2em absolute tc-[primary]"></i>
+        </div>
+        <!-- <h1>Tenox<span>UI</span></h1> -->
+        <h1>Tenox<span>UI</span></h1>
+      </a>
+      <nav class="fx-ctr gap-1rem" id="navbar">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/docs">Docs</a>
+          </li>
+        </ul>
+        <div id="theme">
+          <span class="ms-line fs-1em"></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="fx-ctr fd-[md-col-row] w-mx-70% sec-full">
+        <div class="w-full fx-ctr post-relative">
+          <span
+            class="mi-sharp absolute z--1 tc-[sub-text-light] fs-12rem blur-50px"
+            >circle</span
+          >
+          <i class="txi ti-vantenox tc-[primary] fs-[hero-logo-size]"></i>
+        </div>
+        <div class="w-full fx-ctr fd-[col] ai-[md-center-start]">
+          <h1 class="hero-sec">Tenox<span class="tc-[primary]">UI</span></h1>
+          <p class="hero-desc fs-14px">
+            Fast and Lightweight CSS Framework, Style through javascript.
+          </p>
+          <a href="/docs/starting" class="btn-primary mt-1rem hover:scale"
+            >Get Started <span class="mi-line fs-1.2rem">arrow_forward</span></a
+          >
+        </div>
+      </section>
+      <section class="fx-ctr fd-[col] gap-1rem">
+        <div class="fx-str fd-[col] w-full gap-1rem">
+          <div class="w-full fx-ctr gap-1rem">
+            <div class="fx-ctr jc-[flex-start] gap-8px">
+              <span class="ms-line tc-[primary]">info</span>
+              <p class="tc-[sub-text-dark] fs-1rem nowrap">Instalation</p>
+            </div>
+            <div class="w-full h-2px bg-[primary]"></div>
+          </div>
+          <h2 class="fs-1.8rem">Add TenoxUI into your workspace.</h2>
+          <p class="text-para">
+            There's several ways to add TenoxUI into your project.
+          </p>
+          <h3 class="fs-1.3rem">NPM</h3>
+          <pre
+            class="language-shell fx-str w-mx"
+          ><code class="language-shell">npm i tenoxui</code></pre>
+          <h3 class="fs-1.3rem">CDN</h3>
+          <p class="text-para">CSS</p>
+          <pre
+            class="language-html fx-str w-mx"
+          ><code class="language-html">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tenoxui/dist/css/index.min.css" /&gt;;</code></pre>
+          <p class="text-para">CJS</p>
+          <pre
+            class="language-html fx-str w-mx"
+          ><code class="language-html">&lt;script src="https://cdn.jsdelivr.net/npm/tenoxui/dist/js/tenoxui.min.js"&gt;&lt;/script&gt;</code></pre>
+          <p class="text-para">ESM</p>
+          <pre
+            class="language-html fx-str w-mx"
+          ><code class="language-html">&lt;script type="module" src="https://cdn.jsdelivr.net/npm/tenoxui/dist/js/tenoxui.esm.min.js"&gt;&lt;/script&gt;</code></pre>
+        </div>
+      </section>
+      <section class="fx-ctr fd-[col] gap-1rem">
+        <div class="fx-str fd-[col] w-full gap-1rem">
+          <div class="w-full fx-ctr gap-1rem">
+            <div class="fx-ctr jc-[flex-start] gap-8px">
+              <span class="ms-line tc-[primary]">info</span>
+              <p class="tc-[sub-text-dark] fs-1rem nowrap">About TenoxUI</p>
+            </div>
+            <div class="w-full h-2px bg-[primary]"></div>
+          </div>
+
+          <h2 class="fs-1.8rem">Why should i use TenoxUI?</h2>
+          <p class="text-para">
+            TenoxUI stands as a nimble Utility-First CSS framework meticulously
+            crafted to elevate web development by enhancing speed and
+            efficiency.
+          </p>
+          <div class="fx-str gap-1rem fxw-wrap">
+            <p class="btn-primary">Fast</p>
+            <p class="btn-primary">Small</p>
+            <p class="btn-primary">Utility-First</p>
+            <p class="btn-primary">UI Component</p>
+            <p class="btn-primary">Customizable</p>
+          </div>
+        </div>
+        <div class="flex-wrapper mt-20px">
+          <div class="fx-start-col">
+            <span class="ms-line fs-2rem tc-[primary]">bolt</span>
+            <h3 class="fs-1.4rem">Fast and Efficient</h3>
+            <p class="text-feat">
+              The classes are managed through
+              <span class="fw-600">Javascript</span>, ensuring fast and
+              efficiency.
+            </p>
+          </div>
+          <div class="fx-start-col">
+            <span class="ms-line fs-2rem tc-[primary]">sort</span>
+            <h3 class="fs-1.4rem">Utility-First</h3>
+            <p class="text-feat">
+              Apply pre-defined utility classes to elements. Fostering a
+              <span class="fw-600">Utility-First</span> approach to styling.
+            </p>
+          </div>
+          <div class="fx-start-col">
+            <span class="ms-line fs-2rem tc-[primary]">tabs</span>
+            <h3 class="fs-1.4rem">UI Component</h3>
+            <p class="text-feat">
+              Utilize the UI components we've provided with
+              <span class="fw-600">TenoxUI Component</span> for your website.
+            </p>
+          </div>
+          <div class="fx-start-col">
+            <span class="ms-line fs-2rem tc-[primary]">draw</span>
+            <h3 class="fs-1.4rem">Tailored to Your Taste</h3>
+            <p class="text-feat">
+              Customize your style with user-friendly configuration, providing a
+              <span class="fw-600">personalized design experience</span>.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="fx-str fd-[col] w-full gap-1rem">
+          <div class="w-full fx-ctr gap-1rem">
+            <div class="fx-ctr jc-[flex-start] gap-8px">
+              <span class="ms-line tc-[primary]">school</span>
+              <p class="tc-[sub-text-dark] fs-1rem nowrap">Quick Learn</p>
+            </div>
+            <div class="w-full h-2px bg-[primary]"></div>
+          </div>
+          <div class="tl-wrapper">
+            <h2 class="fs-1.8rem">
+              Let's take a fast look into our styled components
+            </h2>
+            <p class="text-para">
+              In this section you we can learn from a few code that use TenoxUI
+              for styling your component. Let's take a look into this simple and
+              really easy to understanding code below :
+            </p>
+          </div>
+
+          <h4 class="fs-1rem">Javascript :</h4>
+          <p class="text-note">
+            Make your property and styles through javascript code.
+          </p>
+          <pre
+            class="language-javascript fx-str w-mx"
+          ><code class="language-javascript">// Make New Property You Desired            
+MultiProps({
+
+  dis: ["display"],
+
+  "fx-par": ["justify-content", "align-items"],
+
+});
+
+// Define your custom styles
+MultiStyles({
+  
+  ".card-parent": "bg-[card-bg] tc-[card-text] p-1rem br-8px dis-flex fx-par-center gap-1rem",
+  
+  ".card-image": "br-50% bg-[primary] box-3rem dis-flex fx-par-center",
+  
+  ".card-name > p.title": "fs-1rem fw-600",
+
+  ".card-name > p.desc": "fs-14px fw-400",
+  
+  ".card-parent > :last-child": "ml-3rem fs-1rem",
+
+});
+</code>
+</pre>
+
+          <h4 class="fs-1rem">CSS :</h4>
+          <p class="text-note">Let's add some css variable.</p>
+          <pre class="language-css fx-str"><code class="language-css">:root {
+  --primary: #d2e603;
+  --card-bg: #efefef;
+  --card-text: #0d0d0d;
+}
+</code>
+</pre>
+
+          <h4 class="fs-1rem">HTML :</h4>
+          <p class="text-note">And now... The execution time.</p>
+          <pre
+            class="language-html fx-str"
+          ><code class="language-html">&lt;div class=&quot;card-parent&quot;&gt;
+  &lt;div class=&quot;card-image&quot;&gt;
+    &lt;p&gt;BG&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card-name&quot;&gt;
+    &lt;p class=&quot;title&quot;&gt;Some item&lt;/p&gt;
+    &lt;p class=&quot;desc&quot;&gt;$40&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;span&gt;your_icon&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card-parent&quot;&gt;
+  &lt;div class=&quot;card-image bg-lightblue&quot;&gt;
+    &lt;p&gt;BG&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card-name&quot;&gt;
+    &lt;p class=&quot;title&quot;&gt;Some item&lt;/p&gt;
+    &lt;p class=&quot;desc tc-purple fw-700&quot;&gt;$230&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;span&gt;your_icon&lt;/span&gt;
+&lt;/div&gt;
+</code>
+</pre>
+          <p class="text-note">
+            Note : In this case, i am using icon from
+
+            <a href="https://fonts.google.com/icons" class="anchor-links">
+              <span class="cl__code tc-[primary]">`Google Material Icons`</span>
+            </a>
+          </p>
+          <h4 class="fs-1rem">Output :</h4>
+          <div class="fx-ctr fd-[col] p-2rem bg-[sub-light] br-8px gap-1rem">
+            <style>
+              :root {
+                --card-bg: #efefef;
+                --card-text: #0d0d0d;
+              }
+            </style>
+            <div class="card-parent">
+              <div class="card-image">
+                <p>BG</p>
+              </div>
+              <div class="card-name">
+                <p class="title">Some item</p>
+                <p class="desc">$40</p>
+              </div>
+              <span class="mi-line">arrow_forward</span>
+            </div>
+            <div class="card-parent">
+              <div class="card-image bg-lightblue">
+                <p>BG</p>
+              </div>
+              <div class="card-name">
+                <p class="title">Some item</p>
+                <p class="desc tc-purple fw-700">$230</p>
+              </div>
+              <span class="mi-line">arrow_forward</span>
+            </div>
+          </div>
+          <p class="text-para ta-center">
+            That's all for this time, hope you enjoy my work and See you next
+            time :)
+          </p>
+          <!-- end Template -->
+        </div>
+      </section>
+      <section class="fx-ctr">
+        <p class="text-para font-style-italic ta-center">- Quran 17:32 -</p>
+      </section>
+    </main>
+    <footer>
+      <div class="fx-wrapper-nofull fd-row gap-2rem">
+        <div class="fx-100px fx-str gap-1rem fd-[col] jc-[sb]">
+          <div class="fx-str fd-[col]">
+            <h1 class="logo-name fs-2rem">
+              Tenox<span class="tc-[primary]">UI</span
+              ><span class="fs-1rem" hidden>.css</span>
+            </h1>
+            <p class="fs-12px tc-[sub-text-dark] fw-600">by NOuSantx</p>
+          </div>
+          <div class="social">
+            <a href="https://instagram.com/nousantx" hidden>
+              <i class="txi ti-instagram"></i>
+            </a>
+            <a href="https://linkedin.com/in/nousantx" aria-label="linkedin">
+              <i class="txi ti-linkedin"></i>
+            </a>
+            <a href="https://x.com/nousantx" aria-label="twitter">
+              <i class="txi ti-twitter_x"></i>
+            </a>
+            <a href="https://github.com/nousantx" aria-label="github">
+              <i class="txi ti-github_square"></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="fx-500px display-flex flex-parent-[flex-start] gap-2rem h-auto ai-[full] h-mn-100px fx-wrap-wrap"
+        >
+          <div class="fx-130px fx-parent-[flex-start] fd-[col] gap-10px">
+            <h2 class="fs-1.4rem">Other Project</h2>
+            <a href="#" class="footer-links">UI Component</a>
+            <a href="#" class="footer-links">TUI Design</a>
+            <a href="#" class="footer-links">TUI Core</a>
+          </div>
+          <div class="fx-130px fx-parent-[flex-start] fd-[col] gap-10px">
+            <h2 class="fs-1.4rem">Useful Links</h2>
+            <a href="#" class="footer-links">GitHub</a>
+            <a href="#" class="footer-links">NPM</a>
+            <a href="#" class="footer-links">JSDelivr</a>
+          </div>
+        </div>
+      </div>
+      <div class="fx-ctr pt-2rem">
+        <p class="fs-12px tc-[sub-text-dark] fw-600">
+          Copyright &copy; 2023 NOuSantx. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="./src/prism/prism.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        const e = document.querySelector(".loader");
+        e.classList.add("loader-hidden");
+      });
+    </script>
+    <script src="./src/script/script.js"></script>
+  </body>
+</html>
