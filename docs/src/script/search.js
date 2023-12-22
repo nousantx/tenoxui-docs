@@ -12,10 +12,16 @@ document.addEventListener("DOMContentLoaded", function () {
       category: "Box",
     },
     {
+      id: "Width & Height",
+      link: "width-and-height",
+      searchable: "Width and Height",
+      category: "Box",
+    },
+    {
       id: "Typography",
       link: "typography",
       searchable: "Hoho Spacing",
-      category: "Typography",
+      category: "Text",
     },
 
     // Others
@@ -105,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
           result.content,
           result.link,
           result.category,
-          searchTerm,
+          searchTerm
         );
         resultsContainer.appendChild(listItem);
       });
@@ -120,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (index !== -1) {
       const highlightedText = content.substring(
         index,
-        index + searchTerm.length,
+        index + searchTerm.length
       );
       const beforeText = content.substring(0, index);
       const afterText = content.substring(index + searchTerm.length);
@@ -145,5 +151,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }, {});
   }
 });
-
-TenoxUI();

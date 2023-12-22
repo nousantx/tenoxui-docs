@@ -48,6 +48,10 @@ web_modules/
 # TypeScript cache
 *.tsbuildinfo
 
+# Web
+**/robots.txt
+**/sitemap.xml
+
 # Optional npm cache directory
 .npm
 
@@ -128,3 +132,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+*.png
+*.ico

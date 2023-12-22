@@ -3,11 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Documentation | TenoxUI</title>
-    <meta name="description" content="hello" />
+    <title>Padding and Margin Docs | TenoxUI</title>
+    <meta
+      name="description"
+      content="Documentation of TenoxUI. Explore various classes and usage for your component. TenoxUI documentation also contain example of its usage for all classes."
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://tenoxui.web.app/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://tenoxui.web.app/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://tenoxui.web.app/favicon-16x16.png"
+    />
+    <link rel="manifest" href="https://tenoxui.web.app/site.webmanifest" />
+    <meta property="og:title" content="Docs | TenoxUI" />
+    <meta
+      property="og:description"
+      content="Documentation of TenoxUI. Explore various classes and usage for your component. TenoxUI documentation also contain example of its usage for all classes."
+    />
+    <meta
+      property="og:image"
+      content="https://tenoxui.web.app/src/image/docs-header.jpg"
+    />
+    <meta property="og:url" content="https://tenoxui.web.app/docs" />
+    <!-- Style -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link rel="preload" href="../src/styles/root.css" as="style" />
     <link rel="preload" href="../src/styles/styles.css" as="style" />
     <link rel="preload" href="../src/styles/prism.css" as="style" />
@@ -16,14 +47,11 @@
     <link rel="stylesheet" href="../src/styles/prism.css" />
     <link rel="stylesheet" href="../src/icons/style.css" />
     <link rel="stylesheet" href="../global.css" />
-
     <link rel="stylesheet" href="../src/styles/styles.css" />
     <link rel="stylesheet" href="../src/styles/root.css" />
     <style>
       .darkmode {
         --mode-icon: "nights_stay";
-        --primary: #d2e603;
-        --prim-opa: rgba(211, 230, 3, 0.2);
         --light: #151618;
         --sub-light: #1e1e1f;
         --sub-text-light: #383a3b;
@@ -37,30 +65,31 @@
         color: var(--light);
       }
     </style>
-    <link rel="preload" href="styles.css" as="style" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" href="./src/css/style.css" as="style" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/tenoxui@0.4.0/dist/css/index.min.css"
       rel="stylesheet"
     />
     <script async type="module" src="../src/script/styles.js"></script>
-    <script async type="module" src="../src/script/docsStyles.js"></script>
-    <script defer src="../src/script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tenoxui@0.4.0/dist/js/tenoxui.min.js"></script>
   </head>
   <body>
     <!-- <header class="navbar z-99">
       <div class="brand">TenoxUI</div>
       <div class="menu-icon" id="menu-icon">&#9776;</div>
     </header> -->
-
+    <div class="loader"></div>
     <header class="navbar">
-      <a class="logo" href="#">
-        <div class="fx-ctr relative w-1rem h-1rem">
-          <i class="txi ti-vtx-solid fs-1.2em absolute tc-[dark]"></i>
-          <i class="txi ti-vtx_part_2 fs-1.2em absolute tc-[primary]"></i>
+      <a class="logo gap-8px" href="#">
+        <div class="fx-ctr relative box-1.2rem">
+          <!-- <i class="txi ti-vtx-solid fs-1.2em absolute tc-[dark]"></i>
+          <i class="txi ti-vtx_part_2 fs-1.2em absolute tc-[primary]"></i> -->
+          <i class="txi ti-vtx_part_1 tc-[dark] fs-1.2rem absolute"></i>
+          <i class="txi ti-vtx_part_2 tg-purple-blue fs-1.2rem absolute"></i>
         </div>
         <!-- <h1>Tenox<span>UI</span></h1> -->
-        <h1 class="fs-14px">Tenox<span>UI</span></h1>
+        <h1>Tenox<span class="tg-purple-blue">UI</span></h1>
       </a>
       <nav class="fx-ctr gap-1rem" id="navbar">
         <ul>
@@ -79,7 +108,7 @@
         <div class="ms-line fs-1.8rem" id="menu-icon">menu</div>
       </div>
     </header>
-    <aside class="sidebar" id="sidebar">
+    <aside class="sidebar sidebar-visible" id="sidebar">
       <div class="w-mx fx-ctr fd-[col]">
         <div id="search-container">
           <input type="text" id="search-input" placeholder="Search Docs..." />
@@ -95,7 +124,7 @@
     </aside>
     <main>
       <section class="sec-full fx-[flex-start] fd-[col] post-relative pt-5rem">
-        <span class="ms-line tc-[primary] fs-3rem">view_comfy</span>
+        <span class="ms-line tg-purple-blue fs-3rem">view_comfy</span>
         <h1 class="pt-1rem fs-2rem lh-2">Padding & Margin.</h1>
         <p class="text-para">
           In this page, you will learn about padding and margin rules in
@@ -191,28 +220,65 @@
         </div>
         <!-- end Template -->
       </section>
+      <!-- Prev and Next Docs Template -->
+      <div class="w-mx fx-ctr ai-[full] fxw-wrap">
+        <a href="#" class="pn-docs">
+          <p class="tc-[primary]">Padding</p>
+          <p class="text-note fx-ctr gap-5px">
+            <span class="mi-line fs-14px">arrow_back</span>
+            Prev Page
+          </p>
+        </a>
+        <a href="#" class="pn-docs">
+          <p class="tc-[primary]">Padding</p>
+          <p class="text-note fx-ctr gap-5px">
+            Next Page
+            <span class="mi-line fs-14px">arrow_forward</span>
+          </p>
+        </a>
+      </div>
     </main>
-    <footer>
-      <div class="fx-wrapper-nofull fd-row gap-2rem">
+    <footer class="p-0">
+      <div class="fx-wrapper-nofull fd-row gap-2rem p-2rem">
         <div class="fx-100px fx-str gap-1rem fd-[col] jc-[sb]">
           <div class="fx-str fd-[col]">
-            <h1 class="logo-name fs-2rem">
-              Tenox<span class="tc-[primary]">UI</span
-              ><span class="fs-1rem" hidden>.css</span>
-            </h1>
+            <div class="fx-ctr jc-[flex-start] gap-8px">
+              <div class="fx-ctr relative box-2rem">
+                <i class="txi ti-vtx_part_1 tc-[dark] fs-2rem absolute"></i>
+                <i
+                  class="txi ti-vtx_part_2 tg-purple-blue fs-2rem absolute"
+                ></i>
+              </div>
+              <h1 class="logo-name fs-2rem">
+                Tenox<span class="tg-purple-blue">UI</span
+                ><span class="fs-1rem" hidden>.css</span>
+              </h1>
+            </div>
             <p class="fs-12px tc-[sub-text-dark] fw-600">by NOuSantx</p>
           </div>
           <div class="social">
-            <a href="https://instagram.com/nousantx" hidden>
+            <a target="_blank" href="https://instagram.com/nousantx" hidden>
               <i class="txi ti-instagram"></i>
             </a>
-            <a href="https://linkedin.com/in/nousantx" aria-label="linkedin">
+            <a
+              target="_blank"
+              href="https://linkedin.com/in/nousantx"
+              aria-label="linkedin"
+            >
               <i class="txi ti-linkedin"></i>
             </a>
-            <a href="https://x.com/nousantx" aria-label="twitter">
+            <a
+              target="_blank"
+              href="https://x.com/nousantx"
+              aria-label="twitter"
+            >
               <i class="txi ti-twitter_x"></i>
             </a>
-            <a href="https://github.com/nousantx" aria-label="github">
+            <a
+              target="_blank"
+              href="https://github.com/nousantx"
+              aria-label="github"
+            >
               <i class="txi ti-github_square"></i>
             </a>
           </div>
@@ -222,38 +288,116 @@
         >
           <div class="fx-130px fx-parent-[flex-start] fd-[col] gap-10px">
             <h2 class="fs-1.4rem">Other Project</h2>
-            <a href="#" class="footer-links">UI Component</a>
-            <a href="#" class="footer-links">TUI Design</a>
-            <a href="#" class="footer-links">TUI Core</a>
+            <a
+              target="_blank"
+              href="https://github.com/nousantx/tenoxui-component"
+              class="footer-links"
+              >UI Component</a
+            >
+            <a
+              target="_blank"
+              href="https://github.com/nousantx/tenoxui-pages"
+              class="footer-links"
+              >TUI Template</a
+            >
+            <a
+              target="_blank"
+              href="https://github.com/nousantx/react-tui"
+              class="footer-links"
+              >TUI React</a
+            >
           </div>
           <div class="fx-130px fx-parent-[flex-start] fd-[col] gap-10px">
             <h2 class="fs-1.4rem">Useful Links</h2>
-            <a href="#" class="footer-links">GitHub</a>
-            <a href="#" class="footer-links">NPM</a>
-            <a href="#" class="footer-links">JSDelivr</a>
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://github.com/nousantx"
+              class="footer-links"
+              >GitHub</a
+            >
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://npmjs.com/~nousantx"
+              class="footer-links"
+              >NPM</a
+            >
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://www.jsdelivr.com/package/npm/tenoxui"
+              class="footer-links"
+              >JSDelivr</a
+            >
           </div>
         </div>
       </div>
-      <div class="fx-ctr pt-2rem">
-        <p class="fs-12px tc-[sub-text-dark] fw-600">
+      <div class="fx-ctr p-1rem cr-tenox">
+        <p class="text-note fs-12px">
           Copyright &copy; 2023 NOuSantx. All Rights Reserved.
         </p>
       </div>
     </footer>
-
-    <script
-      async
-      src="https://cdn.jsdelivr.net/npm/tenoxui@0.4.0/dist/js/tenoxui.min.js"
-    ></script>
-    <script defer src="search.js"></script>
     <script defer src="../src/script/prism.js"></script>
-    <script>
+    <script defer src="./src/script/search.js"></script>
+    <script async>
       // loader overlay
       window.addEventListener("load", () => {
         const e = document.querySelector(".loader");
         e.classList.add("loader-hidden");
         e.addEventListener("transitioned", () => {
           document.body.removeChild("loader");
+        });
+      });
+      // darkmode toggler
+      let darkMode = localStorage.getItem("darkMode");
+      const body = document.getElementById("body");
+      const theme = document.getElementById("theme");
+      const darkModeEnable = () => {
+        document.body.classList.add("darkmode");
+        localStorage.setItem("darkMode", "darkModeEnabled");
+      };
+      const darkModeDisable = () => {
+        document.body.classList.remove("darkmode");
+        localStorage.setItem("darkMode", null);
+      };
+      if (darkMode === "darkModeEnabled") {
+        darkModeEnable();
+      }
+      theme.addEventListener("click", function () {
+        darkMode = localStorage.getItem("darkMode");
+        if (darkMode !== "darkModeEnabled") {
+          darkModeEnable();
+        } else {
+          darkModeDisable();
+        }
+      });
+    </script>
+    <script defer>
+      window.addEventListener("DOMContentLoaded", () => {
+        MultiProps({
+          fxw: ["flexWrap"],
+          tr: ["transition"],
+          scroll: ["scrollBehavior"],
+          "font-style": ["font-style"],
+          bdra: ["border"],
+          outln: ["outline"],
+        });
+        MultiStyles({
+          // Docs
+          ".sidebar":
+            "post-fixed h-100% t-0 l--100% bg-[sub-light] overX-hidden tr-0.5s w-200px z-10 display-flex ai-center fd-[col] jc-[sb]",
+          "#search-input":
+            "w-100% p-8px fs-1em fw-500 bg-[light] bdra-none tc-[dark] outln-none tr-0.5s br-5px",
+          ".category-label": "fs-1.6rem ph-1rem",
+          "#sidebar-links":
+            "display-flex flex-parent-[flex-start] fd-[col] gap-1rem",
+          ".docs-links":
+            "pv-8px ph-25px td-none display-block tr-0.3s fw-500 tc-[sub-dark]",
+          // Docs Navigator
+          ".pn-docs":
+            "fx-0 p-2rem bg-[sub-light] display-flex flex-parent-center fd-[col] tr-0.3s",
         });
       });
     </script>

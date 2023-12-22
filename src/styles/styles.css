@@ -3,7 +3,12 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .cl__code,
-.fira-code,
+.fira-code
+
+/*, [class*="language-"] */ {
+  font-family: "Fira Code", monospace !important;
+  font-weight: 500;
+}
 [class*="language-"] {
   font-family: "Fira Code", monospace !important;
   font-weight: 500;
@@ -90,8 +95,8 @@ header a {
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 998;
-  transition: opacity 0.75s, visibility 0.75s;
+  z-index: 1000;
+  transition: opacity 1s, visibility 1s;
 }
 .loader-hidden {
   opacity: 0;
@@ -104,7 +109,7 @@ header a {
   border: 8px solid var(--dark);
   border-top-color: var(--primary);
   border-radius: 50%;
-  animation: loading 0.75s ease infinite;
+  animation: loading 1s ease infinite;
 }
 @keyframes loading {
   from {
@@ -113,4 +118,9 @@ header a {
   to {
     transform: rotate(1turn);
   }
+}
+.pn-docs:hover {
+  scale: 1.03;
+
+  text-decoration: none !important;
 }

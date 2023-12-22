@@ -56,11 +56,9 @@
   transition: 0.3s;
 }
 
-.sidebar.sidebar-visible{
-    --menu-icon: "close" !important;
+.sidebar.sidebar-visible {
   left: 0 !important;
 }
-
 
 a.docs-links:hover {
   background-color: var(--prim-opa);

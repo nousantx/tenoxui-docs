@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -44,8 +44,6 @@
       }
       .darkmode {
         --mode-icon: "nights_stay";
-        --primary: #d2e603;
-        --prim-opa: rgba(211, 230, 3, 0.2);
         --light: #151618;
         --sub-light: #1e1e1f;
         --sub-text-light: #383a3b;
@@ -66,18 +64,17 @@
       type="module"
       src="https://tenoxui.web.app/src/script/styles.js"
     ></script>
-    <script async src="https://tenoxui.web.app/src/script/script.js"></script>
   </head>
   <body>
     <div class="loader"></div>
     <header>
       <a class="logo" href="#">
         <div class="fx-ctr relative w-1rem h-1rem">
-          <i class="txi ti-vtx-solid fs-1.2em absolute tc-[dark]"></i>
-          <i class="txi ti-vtx_part_2 fs-1.2em absolute tc-[primary]"></i>
+          <i class="txi ti-vtx_part_1 tc-[dark] fs-1.2rem absolute"></i>
+          <i class="txi ti-vtx_part_2 tg-purple-blue fs-1.2rem absolute"></i>
         </div>
-        <i class="txi"></i>
-        <h1>Tenox<span>UI</span></h1>
+        <!-- <h1>Tenox<span>UI</span></h1> -->
+        <h1>Tenox<span class="tg-purple-blue">UI</span></h1>
       </a>
       <nav class="fx-ctr gap-1rem" id="navbar">
         <ul>
