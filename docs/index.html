@@ -38,6 +38,11 @@
       content="https://tenoxui.web.app/src/image/docs-header.jpg"
     />
     <meta property="og:url" content="https://tenoxui.web.app/docs" />
+
+    <meta name="twitter:card" content="https://tenoxui.web.app/header.jpg">
+    <meta name="twitter:title" content="Docs | TenoxUI">
+    <meta name="twitter:description" content="TenoxUI is a Utility-First CSS Framework built for elevate web development by enhancing speed and efficiency by delivering various collection of utility-first class. Also, make it faster with our component library that you can use for your projects.">
+    <meta name="twitter:image" content="https://tenoxui.web.app/header.jpg">
     <!-- Style -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,8 +56,8 @@
     <link rel="stylesheet" href="../global.css" />
     <link rel="stylesheet" href="../src/styles/styles.css" />
     <link rel="stylesheet" href="../src/styles/root.css" />
-    <link rel="preload" href="styles.css" as="style" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" href="./src/css/style.css" as="style" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/tenoxui@0.4.0/dist/css/index.min.css"
       rel="stylesheet"
@@ -118,7 +123,7 @@
         <div class="ms-line fs-1.8rem" id="menu-icon">menu</div>
       </div>
     </header>
-    <aside class="sidebar sidebar-visible" id="sidebar">
+    <aside class="sidebar" id="sidebar">
       <div class="w-mx fx-ctr fd-[col]">
         <div id="search-container">
           <input type="text" id="search-input" placeholder="Search Docs..." />
@@ -240,7 +245,7 @@
       </div>
     </footer>
     <!-- Script -->
-    <script defer src="search.js"></script>
+    <script defer src="./src/script/search.js"></script>
     <script async>
       // loader overlay
       window.addEventListener("load", () => {
