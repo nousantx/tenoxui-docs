@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Width and Height | TenoxUI</title>
+    <title>Position | TenoxUI</title>
     <meta
       name="description"
       content="Documentation of TenoxUI. Explore various classes and usage for your component. TenoxUI documentation also contain example of its usage for all classes."
@@ -131,85 +131,84 @@
     </aside>
     <main>
       <section class="sec-full fx-[flex-start] fd-[col] post-relative pt-5rem">
-        <span class="ms-line tc-[primary] fs-3rem">view_comfy</span>
-        <h1 class="pt-1rem fs-2rem lh-2">Width & Height</h1>
+        <span class="ms-line tc-[primary] fs-3rem">widgets</span>
+        <h1 class="pt-1rem fs-2rem lh-2">Position</h1>
         <p class="text-para">
-          In this page, you will learn about how to set width and height to an
-          element.
+          Let's learn about how to positioning your element.
         </p>
         <div class="w-full pt-2rem">
           <div class="w-full fx-ctr gap-1rem">
             <div class="fx-ctr jc-[flex-start] gap-8px">
-              <h2 class="fs-1.5rem nowrap lh-1.5">Width Rule</h2>
+              <h2 class="fs-1.5rem nowrap lh-1.5">Position</h2>
             </div>
             <div class="w-full h-2px bg-[do-color]"></div>
           </div>
 
           <p class="text-note">
-            You can set width of the element using
-            <span class="cl__code-prim">w-</span>,
-            <span class="cl__code-prim">w-mn-</span>,
-            <span class="cl__code-prim">w-mx-</span> class. And its also has
-            supported to all unit like vw, '%', rem, etc. Here is the type and
-            the property:
+            Setting the position is not that hard, just use
+            <span class="cl__code-prim">position</span> or
+            <span class="cl__code-prim">post</span> class. Here's all value you
+            can add :
           </p>
           <div class="fx-par-[flex-start] gap-5px fd-[col] mt-1rem">
             <p class="text-note">
-              <span class="cl__code-prim">w-</span> : Set width of the element.
+              <span class="cl__code-prim">-absolute</span> : Absolute position
             </p>
             <p class="text-note">
-              <span class="cl__code-prim">w-mn-</span> : Set minimum width of
-              the element.
+              <span class="cl__code-prim">-fixed</span> : Fixed position
             </p>
             <p class="text-note">
-              <span class="cl__code-prim">w-mx-</span> : Set max width of the
-              element.
+              <span class="cl__code-prim">-relative</span> : Relative position
+            </p>
+            <p class="text-note">
+              <span class="cl__code-prim">-static</span> : Static position
+            </p>
+            <p class="text-note">
+              <span class="cl__code-prim">-sticky</span> : Sticky position
             </p>
           </div>
         </div>
         <div class="w-full pt-2rem">
           <div class="w-full fx-ctr gap-1rem">
             <div class="fx-ctr jc-[flex-start] gap-8px">
-              <h2 class="fs-1.5rem nowrap lh-1.5">Height Rule</h2>
+              <h2 class="fs-1.5rem nowrap lh-1.5">Specific Positioning</h2>
             </div>
             <div class="w-full h-2px bg-[do-color]"></div>
           </div>
           <p class="text-note">
-            You can set width of the element using
-            <span class="cl__code-prim">h-</span>,
-            <span class="cl__code-prim">h-mn-</span>,
-            <span class="cl__code-prim">h-mx-</span> class. And its also has
-            supported to all unit like vw, '%', rem, etc. Here is the type and
-            the property:
+            You can set <span class="cl__code">top</span> or
+            <span class="cl__code">bottom</span> directly from your element.
+            Here's all class you can add :
           </p>
           <div class="fx-par-[flex-start] gap-5px fd-[col] mt-1rem">
             <p class="text-note">
-              <span class="cl__code-prim">h-</span> : Set height of the element.
+              <span class="cl__code-prim">t-</span> : Set top value.
             </p>
             <p class="text-note">
-              <span class="cl__code-prim">h-mn-</span> : Set minimum height of
-              the element.
+              <span class="cl__code-prim">l-</span> : Set left value.
             </p>
             <p class="text-note">
-              <span class="cl__code-prim">h-mx-</span> : Set max height of the
-              element.
+              <span class="cl__code-prim">b-</span> : Set bottom value.
+            </p>
+            <p class="text-note">
+              <span class="cl__code-prim">r-</span> : Set right value.
             </p>
           </div>
         </div>
         <div class="w-full pt-2rem">
           <div class="w-full fx-ctr gap-1rem">
             <div class="fx-ctr jc-[flex-start] gap-8px">
-              <h2 class="fs-1.5rem nowrap lh-1.5">BOX type</h2>
+              <h2 class="fs-1.5rem nowrap lh-1.5">z-index</h2>
             </div>
             <div class="w-full h-2px bg-[do-color]"></div>
           </div>
           <p class="text-note">
-            You can change the width and the height of the element at the same
-            time using
-            <span class="cl__code-prim">box-</span> class. Like
-            <span class="cl__code-prim">box-100px</span>, it will make an
-            element have width <span class="cl__code">100px</span> and height
-            <span class="cl__code">100px</span> too.
+            Change the z-index of the element by use
+            <span class="cl__code-prim">z-</span> class. Also, every class can
+            use negative value or min value, check it out from
+            <a href="/docs/negative-value.html" class="tc-[primary]"
+              >Min Value</a
+            >.
           </p>
         </div>
       </section>

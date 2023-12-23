@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Width and Height | TenoxUI</title>
+    <title>Flexbox | TenoxUI</title>
     <meta
       name="description"
       content="Documentation of TenoxUI. Explore various classes and usage for your component. TenoxUI documentation also contain example of its usage for all classes."
@@ -85,20 +85,13 @@
     ></script>
   </head>
   <body>
-    <!-- <header class="navbar z-99">
-      <div class="brand">TenoxUI</div>
-      <div class="menu-icon" id="menu-icon">&#9776;</div>
-    </header> -->
     <div class="loader"></div>
     <header class="navbar">
       <a class="logo gap-8px" href="#">
         <div class="fx-ctr relative box-1.2rem">
-          <!-- <i class="txi ti-vtx-solid fs-1.2em absolute tc-[dark]"></i>
-          <i class="txi ti-vtx_part_2 fs-1.2em absolute tc-[primary]"></i> -->
           <i class="txi ti-vtx_part_1 tc-[dark] fs-1.2rem absolute"></i>
           <i class="txi ti-vtx_part_2 tg-purple-blue fs-1.2rem absolute"></i>
         </div>
-        <!-- <h1>Tenox<span>UI</span></h1> -->
         <h1>Tenox<span class="tg-purple-blue">UI</span></h1>
       </a>
       <nav class="fx-ctr gap-1rem" id="navbar">
@@ -118,99 +111,132 @@
         <div class="ms-line fs-1.8rem curs-pointer" id="menu-icon">menu</div>
       </div>
     </header>
-    <aside class="sidebar sidebar-visible" id="sidebar">
+    <aside class="sidebar" id="sidebar">
       <div class="w-mx fx-ctr fd-[col]">
         <div id="search-container">
           <input type="text" id="search-input" placeholder="Search Docs..." />
           <ul id="results-container"></ul>
         </div>
-        <div id="sidebar-links" class="all-docs w-full">
-          <!-- Add more links as needed -->
-        </div>
+        <div id="sidebar-links" class="all-docs w-full"></div>
       </div>
     </aside>
     <main>
       <section class="sec-full fx-[flex-start] fd-[col] post-relative pt-5rem">
-        <span class="ms-line tc-[primary] fs-3rem">view_comfy</span>
-        <h1 class="pt-1rem fs-2rem lh-2">Width & Height</h1>
-        <p class="text-para">
-          In this page, you will learn about how to set width and height to an
-          element.
-        </p>
+        <span class="ms-line tc-[primary] fs-3rem">grid_view</span>
+        <h1 class="pt-1rem fs-2rem lh-2">Flexbox</h1>
+        <p class="text-para">Let's make a Flexbox layout.</p>
         <div class="w-full pt-2rem">
           <div class="w-full fx-ctr gap-1rem">
             <div class="fx-ctr jc-[flex-start] gap-8px">
-              <h2 class="fs-1.5rem nowrap lh-1.5">Width Rule</h2>
+              <h2 class="fs-1.5rem nowrap lh-1.5">Display Flex</h2>
             </div>
             <div class="w-full h-2px bg-[do-color]"></div>
           </div>
-
           <p class="text-note">
-            You can set width of the element using
-            <span class="cl__code-prim">w-</span>,
-            <span class="cl__code-prim">w-mn-</span>,
-            <span class="cl__code-prim">w-mx-</span> class. And its also has
-            supported to all unit like vw, '%', rem, etc. Here is the type and
-            the property:
+            If you want to use flexbox, you need to make the element have
+            <span class="cl__code">flex</span> property. And, your element will
+            automatically have <span class="cl__code">display: flex</span> if
+            the element have class started with
+            <span class="cl__code">flex-</span> or
+            <span class="cl__code">fx-</span> class.
           </p>
+        </div>
+        <div class="w-full pt-2rem">
+          <div class="w-full fx-ctr gap-1rem">
+            <div class="fx-ctr jc-[flex-start] gap-8px">
+              <h2 class="fs-1.5rem nowrap lh-1.5">Align Property</h2>
+            </div>
+            <div class="w-full h-2px bg-[do-color]"></div>
+          </div>
+          <p class="text-note">Here's all class you can add :</p>
           <div class="fx-par-[flex-start] gap-5px fd-[col] mt-1rem">
             <p class="text-note">
-              <span class="cl__code-prim">w-</span> : Set width of the element.
+              <span class="cl__code-prim">ac-</span> : Set
+              <span class="cl__code">align-content</span> property.
             </p>
             <p class="text-note">
-              <span class="cl__code-prim">w-mn-</span> : Set minimum width of
-              the element.
+              <span class="cl__code-prim">ai-</span> : Set
+              <span class="cl__code">align-items</span> property.
             </p>
             <p class="text-note">
-              <span class="cl__code-prim">w-mx-</span> : Set max width of the
-              element.
+              <span class="cl__code-prim">as-</span> : Set
+              <span class="cl__code">align-self</span> property.
             </p>
           </div>
         </div>
         <div class="w-full pt-2rem">
           <div class="w-full fx-ctr gap-1rem">
             <div class="fx-ctr jc-[flex-start] gap-8px">
-              <h2 class="fs-1.5rem nowrap lh-1.5">Height Rule</h2>
+              <h2 class="fs-1.5rem nowrap lh-1.5">Justify Property</h2>
             </div>
             <div class="w-full h-2px bg-[do-color]"></div>
           </div>
-          <p class="text-note">
-            You can set width of the element using
-            <span class="cl__code-prim">h-</span>,
-            <span class="cl__code-prim">h-mn-</span>,
-            <span class="cl__code-prim">h-mx-</span> class. And its also has
-            supported to all unit like vw, '%', rem, etc. Here is the type and
-            the property:
-          </p>
+          <p class="text-note">Here's all class you can add :</p>
           <div class="fx-par-[flex-start] gap-5px fd-[col] mt-1rem">
             <p class="text-note">
-              <span class="cl__code-prim">h-</span> : Set height of the element.
+              <span class="cl__code-prim">jc-</span> : Set
+              <span class="cl__code">justify-content</span> property.
             </p>
             <p class="text-note">
-              <span class="cl__code-prim">h-mn-</span> : Set minimum height of
-              the element.
+              <span class="cl__code-prim">ji-</span> : Set
+              <span class="cl__code">justify-items</span> property.
             </p>
             <p class="text-note">
-              <span class="cl__code-prim">h-mx-</span> : Set max height of the
-              element.
+              <span class="cl__code-prim">js-</span> : Set
+              <span class="cl__code">justify-self</span> property.
+            </p>
+            <p class="text-note mt-1rem">
+              <span class="tc-[dark]">Note</span> : You can't set value that
+              have two words or words that separated by hypens like
+              <span class="cl__code">flex-start</span> and
+              <span class="cl__code">space-between</span>. So, i recommend you
+              to use the css variable instead. Learn more about
+              <a href="/docs/double-value.html" class="tc-[primary]"
+                >Double Value</a
+              >.
             </p>
           </div>
         </div>
         <div class="w-full pt-2rem">
           <div class="w-full fx-ctr gap-1rem">
             <div class="fx-ctr jc-[flex-start] gap-8px">
-              <h2 class="fs-1.5rem nowrap lh-1.5">BOX type</h2>
+              <h2 class="fs-1.5rem nowrap lh-1.5">Flex Property</h2>
             </div>
             <div class="w-full h-2px bg-[do-color]"></div>
           </div>
           <p class="text-note">
-            You can change the width and the height of the element at the same
-            time using
-            <span class="cl__code-prim">box-</span> class. Like
-            <span class="cl__code-prim">box-100px</span>, it will make an
-            element have width <span class="cl__code">100px</span> and height
-            <span class="cl__code">100px</span> too.
+            All type and proeprty you can add on your element :
           </p>
+          <div class="fx-par-[flex-start] gap-5px fd-[col] mt-1rem">
+            <p class="text-note">
+              <span class="cl__code-prim">fd-</span> : Set
+              <span class="cl__code">flex-direction</span> property.
+            </p>
+            <p class="text-note">
+              <span class="cl__code-prim">flex-</span> : Set
+              <span class="cl__code">flex</span> property. FYI,
+              <span class="cl__code">flex-</span> type have custom value,
+              <span class="cl__code">1 1 ${value}</span>. Example, if you use
+              class <span class="cl__code">flex-250px</span>, it will have value
+              for <span class="cl__code">flex: 1 1 250px;</span>
+            </p>
+            <p class="text-note">
+              <span class="cl__code-prim">fx-basis-</span> : Set
+              <span class="cl__code">flex-basis</span> property.
+            </p>
+            <p class="text-note">
+              <span class="cl__code-prim">fx-grow-</span> : Set
+              <span class="cl__code">flex-grow</span> property.
+            </p>
+            <p class="text-note">
+              <span class="cl__code-prim">fx-shrink-</span> : Set
+              <span class="cl__code">flex-shrink</span> property.
+            </p>
+            <p class="text-note">
+              <span class="cl__code-prim">fx-wrap-</span> : Set
+              <span class="cl__code">flex-wrap</span> property.
+            </p>
+          </div>
         </div>
       </section>
       <!-- Prev and Next Docs Template -->

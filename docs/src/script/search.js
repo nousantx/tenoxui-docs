@@ -12,23 +12,61 @@ document.addEventListener("DOMContentLoaded", function () {
       category: "Box",
     },
     {
+      id: "Overflow",
+      link: "overflow",
+      searchable: "Set overflow of you box",
+      category: "Box",
+    },
+    {
+      id: "Positioning",
+      link: "position",
+      searchable: "How to positioning you element.",
+      category: "Box",
+    },
+    {
       id: "Width & Height",
       link: "width-and-height",
       searchable: "Width and Height",
       category: "Box",
     },
+    // Layout
+    {
+      id: "Display",
+      link: "display",
+      searchable: "Display property",
+      category: "Layout",
+    },
+    {
+      id: "Flexbox",
+      link: "flexbox",
+      searchable: "Flexbox Layout",
+      category: "Layout",
+    },
+    {
+      id: "Grid",
+      link: "grid-layout",
+      searchable: "Learn about Grid layout",
+      category: "Layout",
+    },
+    // Text and Typography
     {
       id: "Typography",
       link: "typography",
       searchable: "Hoho Spacing",
       category: "Text",
     },
-
     // Others
     {
       id: "Min Value",
       link: "negative-value",
       searchable: "Set min value or negative value",
+      category: "Other",
+    },
+    {
+      id: "Multi Value & Word",
+      link: "double-value",
+      searchable:
+        "How the double value, separated by hypens ( - ) value work. ",
       category: "Other",
     },
 
