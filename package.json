@@ -4,7 +4,12 @@
   "description": "TenoxUI documentation for docs repository of tenoxui website.",
   "main": "README.md",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "code-prettier": "prettier --write .",
+    "update-readme": "git add README.md && git commit -m 'docs: Update README.md'",
+    "commit-lang-en": "git add id/ && git commit -m 'docs(en): Update documentation for en language'",
+    "commit-lang-id": "git add id/ && git commit -m 'docs(id): Update documentation for id language'",
+    "pull-repo": "git pull origin main",
+    "push-repo": "git push origin main"
   },
   "repository": {
     "type": "git",
@@ -21,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/nousantx/tenoxui-docs/issues"
   },
-  "homepage": "https://github.com/nousantx/tenoxui-docs#readme"
+  "homepage": "https://github.com/nousantx/tenoxui-docs#readme",
+  "dependencies": {
+    "prettier": "^3.2.5"
+  }
 }
