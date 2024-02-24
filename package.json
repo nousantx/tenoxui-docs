@@ -1,0 +1,25 @@
+{
+  "name": "tenoxui-docs",
+  "version": "1.0.0",
+  "description": "TenoxUI documentation for docs repository of tenoxui website.",
+  "main": "README.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nousantx/tenoxui-docs.git"
+  },
+  "keywords": [
+    "docs",
+    "tenoxui",
+    "css-framework",
+    "mdx"
+  ],
+  "author": "nousantx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nousantx/tenoxui-docs/issues"
+  },
+  "homepage": "https://github.com/nousantx/tenoxui-docs#readme"
+}
